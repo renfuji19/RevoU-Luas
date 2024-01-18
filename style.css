@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.home h1{
+	background-color: aqua;
+	text-align: center;
+	height: 55px;
+	padding-top: 20px;
+}
+
+.home {
+	text-align: center;
+}
+
+.home img {
+	padding-top: 30px;
+	height: 100px;
+}
+
+.note{
+	padding-left: 20px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+.hasil p{
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.home input {
+	margin-top: 10px;
+	width: 400px;
+	height: 20px;
+}
+
+.home button{
+	margin-top: 10px;
+	height: 35px;
+	width: 50px;
+	background-color: aqua;
+	transition: 0.75s;
+}
+
+.home button:hover {
+	background-color: red;
+	transition: 0.75s;
+}
+
+#outputText{
+	padding-top: 10px;
+	margin-top: 10px;
+	background-color: aqua;
+	height: 30px;
+}

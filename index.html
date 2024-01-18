@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program Hitung Luas Persegi</title>
+</head>
+<body>
+  
+  <div class="home">
+    <h1>Luas Persegi</h1>
+    <img src="image/persegi.jpeg" alt="image/persegi.jpeg"><br><br><br>
+    <p>Rumus</p>
+    <p>K = 4 X Panjang Sisi</p>
+    <br><br>
+    <p class="note">Dimana : </p>
+    <p class="note">L = Panjang Sisi X Panjang Sisi</p>
+    <br><br></br>
+    <hr>
+    <div class="hasil">
+      <p><strong>Hitung Luas Persegi</strong></p>
+    </div>
+	<form>
+		<input type="number" placeholder="Panjang Sisi" id="sisi"><br>
+		<button type="button" onclick="hitung()">Hitung</button>
+		<button type="button" onclick="reset()">Reset</button>
+		<p id="outputText">Hasil: 0</p>
+		<button href="kal.html">Kal</button>
+	</form>
+  </div>
+
+	<script>
+		function hitung() {
+			let sisi = parseInt(document.getElementById("sisi").value);
+			let luas = sisi * sisi;
+			let hasilElem = document.getElementById("hasil");
+			document.getElementById("outputText").innerHTML = "Hasil: " + luas;
+		}
+		function reset() {
+		  var displayTextElement = document.getElementById("outputText");
+		  displayTextElement.innerHTML = "Hasil: 0";
+		}
+	</script>
+</body>
+</html>
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+  .home h1{
+    background-color: aqua;
+    text-align: center;
+    height: 55px;
+    padding-top: 20px;
+  }
+  .home {
+    text-align: center;
+  }
+  .home img {
+    padding-top: 30px;
+    height: 100px;
+  }
+  .note{
+    padding-left: 20px;
+    padding-top: 5px;
+    text-align: left;
+  }
+  .hasil p{
+    font-size: 20px;
+    padding-top:10px;
+  }
+  .home input {
+    margin-top: 10px;
+    width: 400px;
+    height: 20px;
+  }
+  .home button{
+    margin-top: 10px;
+    height: 35px;
+    width: 50px;
+    background-color: aqua;
+    transition: 0.75s;
+  }
+  .home button:hover {
+    background-color: red;
+    transition: 0.75s;
+  }
+  #outputText{
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: aqua;
+    height: 30px;
+  }
+</style>
